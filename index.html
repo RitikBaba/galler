@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+        border: 0px; 
+        background: url("Images/Mainbg2.jpg") center/cover no-repeat;
+    }
+    header{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        font-size:150px;
+        font-weight: bolder;
+        text-align: center;
+        color:antiquewhite;
+        padding: 50px;
+        margin: 0px;
+        background: url("Images/23.jpg") center/cover no-repeat;
+    }
+    ul{
+        position:fixed;
+        right: 0px;
+        left: 0px;
+        background-color: #FEFFFE;
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        overflow: hidden;
+    }
+    li{
+        padding: 20px;
+        color: #3F474E;
+    }
+    a{
+        color: #3F474E;
+    }
+    li.logo{
+        float: left;
+        color:#3F474E;
+    }
+    li.right{
+        float: right;
+    }
+    li:hover {
+    opacity: 0.7;
+    border-bottom: 3px solid red;
+    cursor: pointer;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    .column {
+      flex: 33%;
+      max-width: 33%;
+      padding: 0 4px;
+    }
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+    }
+    #myImg:hover{
+      opacity: 0.7;
+      cursor: pointer;
+    }
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+      header{
+        font-size:100px;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+      ul{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+      }
+     .logotext{
+        font-size: 8px;
+      }
+      header{
+        font-size:100px;
+      }
+      @media screen and (max-width: 470px){
+        .logotext{
+        font-size: 0px;
+      }
+      }
+    }
+</style>
+<body>
+    <ul >
+        <li class="logo">
+            <a href="index.html"><i class="fa fa-fw fa-envelope">
+            </i><em class="logotext"> ritikbaba28@gmail.com</em></a>
+            
+        </li>
+        <li class="right">
+            <a href="https://github.com/RitikBaba"> <i class="fa fa-github" style="font-size:20px"></i></a>
+        </li>
+        <li class="right">
+            <a href="https://www.youtube.com/channel/UCLNgQGYBJmU8asboptF9mhA"><i class="fa fa-youtube-play" style="font-size: 20px; color:red"></i></a>
+        </li>
+        <li class="right">
+            <a href="https://twitter.com/RitikBaba8"><i class="fa fa-twitter" style="font-size:20px"></i></a>
+        </li>
+        <li class="right">
+            <a href="https://www.facebook.com/ritikbabaiitkgp"><i class="fa fa-facebook-square" style="font-size:20px"></i></a>
+        </li>
+        <li class="right">
+            <a href="https://www.instagram.com/ritik_.baba"><i class="fa fa-instagram" style="font-size:20px"></i></a>
+        </li>
+    </ul>
+    <br><br><br><br>
+    <header>
+        Gallery
+    </header>
+    <br>
+    <br>
+    <section>
+        <div class="row">
+        <div class="column">
+            <img src="Images/1.jpg" id="myImg" herf="Images/1.jpg">
+            <img src="Images/2.jpg" id="myImg">
+            <img src="Images/3.jpg" id="myImg">
+            <img src="Images/4.jpg" id="myImg">
+            <img src="Images/5.jpg" id="myImg">
+            <img src="Images/16.jpg" id="myImg">
+            <!-- <img src="Images/8.jpg" id="myImg"> -->
+        </div>
+        <div class="column">
+            <img src="Images/20.jpg" id="myImg">
+            <img src="Images/9.jpg" id="myImg">
+            <img src="Images/6.jpg" id="myImg">
+            <img src="Images/11.jpg" id="myImg">
+            <img src="Images/12.jpg" id="myImg">
+            <img src="Images/13.jpg" id="myImg">
+            <img src="Images/22.jpg" id="myImg">
+        </div>
+        <div class="column">
+            <img src="Images/14.jpg" id="myImg">
+            <img src="Images/10.jpg" id="myImg">
+            <img src="Images/7.jpg" id="myImg">
+            <img src="Images/17.jpg" id="myImg">
+            <img src="Images/18.jpg" id="myImg">
+            <img src="Images/19.jpg" id="myImg">
+            <img src="Images/15.jpg" id="myImg">
+        </div>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <header>
+            Thank You
+        </header>
+    </footer>
+    <hr>
+</body>
+</html>
